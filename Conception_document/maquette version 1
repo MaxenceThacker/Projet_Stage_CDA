@@ -1,14 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2022-02-23T09:37:58.283Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36" etag="qwJFzqx_pOdPVVR2iwJX" version="16.6.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-02-23T10:51:26.652Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36" etag="won-TqsCc8rzza2XRgOb" version="16.6.2" type="github">
   <diagram id="kV9isibmT8CvIAuasuOY" name="Page-1">
-    <mxGraphModel dx="6285" dy="1994" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4859" dy="1246" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="Oyz2WIepemORyRbRanrp-25" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;" vertex="1" parent="1">
-          <mxGeometry x="-1450" y="2410" width="1920" height="1580" as="geometry" />
-        </mxCell>
-        <mxCell id="Oyz2WIepemORyRbRanrp-64" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=25;fontColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="-1360" y="2879" width="420" height="928" as="geometry" />
+          <mxGeometry x="-1436" y="2380" width="1920" height="1580" as="geometry" />
         </mxCell>
         <mxCell id="9WfR86u83mFcNO1i_Erc-2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;" parent="1" vertex="1">
           <mxGeometry x="-1450" y="440" width="1920" height="1820" as="geometry" />
@@ -217,7 +214,7 @@
         <mxCell id="Oyz2WIepemORyRbRanrp-59" value="&lt;b style=&quot;color: rgb(51 , 51 , 51) ; font-size: 12px&quot;&gt;&lt;font color=&quot;#99ccff&quot;&gt;&lt;font style=&quot;font-size: 70px&quot;&gt;30 Jours&lt;/font&gt;&amp;nbsp;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=27;" vertex="1" parent="1">
           <mxGeometry x="13.5" y="3027.5" width="230" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="Oyz2WIepemORyRbRanrp-60" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 17px&quot;&gt;&amp;nbsp; &amp;nbsp; RENDEZ VOUS TUTEUR&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=27;fontColor=#FFFFFF;align=left;" vertex="1" parent="1">
+        <mxCell id="Oyz2WIepemORyRbRanrp-60" value="&lt;font&gt;&lt;font color=&quot;#000000&quot; style=&quot;font-size: 26px&quot;&gt;&amp;nbsp; &lt;/font&gt;&lt;font color=&quot;#000000&quot; style=&quot;font-size: 15px&quot;&gt;PROCHAIN RENDEZ VOUS TUTEUR&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=27;fontColor=#FFFFFF;align=left;" vertex="1" parent="1">
           <mxGeometry x="-13" y="2949" width="310" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Oyz2WIepemORyRbRanrp-61" value="" style="triangle;whiteSpace=wrap;html=1;fontSize=27;fontColor=#FFFFFF;rotation=90;" vertex="1" parent="1">
@@ -246,6 +243,9 @@
         </mxCell>
         <mxCell id="Oyz2WIepemORyRbRanrp-79" value="&lt;font style=&quot;font-size: 25px&quot;&gt;&lt;b&gt;LOGO AFPA&lt;/b&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=35;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
           <mxGeometry x="-1320" y="2562" width="210" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="Oyz2WIepemORyRbRanrp-80" value="" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;labelBackgroundColor=#33FF33;fontSize=25;fontColor=#CCFFCC;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-2040" y="3154.75" width="90" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
