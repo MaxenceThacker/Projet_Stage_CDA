@@ -1,0 +1,2 @@
+MATIN
+J'ai continué la redaction des spec fonctionelle : - ajout de la page formation & centre - generalisation dees liste administrateur au niveau de la redaction

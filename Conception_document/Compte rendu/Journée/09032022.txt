@@ -1,0 +1,5 @@
+MATIN
+J'ai été en réunion de 9h à 10h30
+J'ai ensuite rédigé le compte rendu de la réunion
+APRES MIDI
+J'ai continué la redaction des spec fonctionelle:- ajout de la page compte - correction fautes d'ortho - supression d'element redondant
