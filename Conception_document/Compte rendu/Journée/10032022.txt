@@ -1,2 +1,7 @@
 MATIN
 J'ai continué la redaction des spec fonctionelle : - ajout de la page formation & centre - generalisation dees liste administrateur au niveau de la redaction
+APRES MIDI
+J'ai continué la redaction des spec fonctionelle : - ajout de la page informations générales et Documents - Lecture de doc sur l'implémentation d'un fichier PC->Appli et sur le téléchargement PDF
+Liens : 
+- https://openclassrooms.com/forum/sujet/php-telechargement-pdf-96858
+- https://stackoverflow.com/questions/4984981/how-do-i-include-an-external-file-in-php

@@ -1,0 +1,3 @@
+MATIN
+J'ai continué la redaction des spec fonctionelle : - ajout de la page Suivi Pédagogique + recherche sur mise en page de celle ci 
+different choix de mise en page, onglet, sous menu etc
