@@ -1,0 +1,37 @@
+Formateur : accés au Remplissage de toutes les parties.
+preciser le remplissage au niveau du role.
+changer le titre
+dire qu'il peuvent consultater.
+Tuteur, Responsable legal
+logo AFPA entreprise
+lien utile dans le footer
+mail identifiant preciser
+NAF Excel 
+Adresse centre Liste formation 
+niveau RNCP formation Liste formation
+Libellé court formation Liste formation 
+équivalent niveau formation (bep, bac etc) Liste formation
+date de publication au journal officiel milesim
+Sigle
+
+Intitulé
+
+Niveau RNCP
+
+Equivalence
+
+Code titre
+
+Millésime
+
+Date de parution au JO de l’arrêté :
+
+Code NSF
+
+Code ROME
+
+Date de fin de validité d'aggrément (Alerte attention plateau technique plus habilité)
+
+
+MAIL DE RECAP lorsque tous à planifier la visite
+(Participants concerné + administrateur)
