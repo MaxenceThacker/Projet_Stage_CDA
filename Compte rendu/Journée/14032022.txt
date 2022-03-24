@@ -1,0 +1,5 @@
+MATIN
+J'ai continué la redaction des spec fonctionelle : - ajout de la page Progression Pédagogique + recherche sur mise en page et les techniques disponibles.
+Le mieux serait de créer la grille de remplissage et de recuperer les informations pour les injecter dans le fichier ecxel via API
+APRES
+J'ai continué la redaction des spec fonctionelle : - ajout sur la page Progression Pédagogique. - ajout de la page FAQ. - relecture.

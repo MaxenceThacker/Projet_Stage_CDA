@@ -1,0 +1,5 @@
+MATIN 
+Continuation de la redaction de la charte graphique. documentation sur les media query.
+APRES MIDI
+Redaction des media query et maitrise de celle ci,  test sur une page html basic.
+Trouver l'origine du probleme de git: fichier excel Planning qui ne peut pas etre push et qui bloque les autres fichier. Peut qu'il y a une securité 

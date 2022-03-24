@@ -1,0 +1,5 @@
+MATIN
+Creation liste des taches à ffaire pour le GANTT, creation du diagramme de GANTT grace à l'application web Bitrix24.fr.
+APRES MIDI
+Apres avoir échangé avec Martine, changement de méthodes car GANTT version 1 était tres imprécis et risque de nee pas etre credible aupres du jury.
+Utilisation du planning à maccros de Martine pour la conception du document. Redaction du document avec l'aide de Martine. merci ! Ennvoie du planning à Clément.

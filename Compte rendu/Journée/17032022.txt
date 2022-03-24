@@ -1,0 +1,4 @@
+MATIN 
+Création du MCD version 1, je m'apperçoie qu'il ne tiendrai pas la route et qu'il me manque des élément. Modification à faire: TUTEURS--FORMATEURS--RESPONSABLES--ALTERNANTS--ROLES ----> ROLES
+APRES MIDI
+Création du MCD version 2, ajout des absences, choic de ne pas stocké les questions de la FAQ.

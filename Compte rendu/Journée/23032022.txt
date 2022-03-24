@@ -1,0 +1,4 @@
+MATIN
+on s'attaque à l'authentification, mais probleme survenue toute la matinée, impossible d'avancer, car impossible de recuperer mon projet symfony, meme si pour l'instant il n'y a que ma charrrte graphique d'implanter, je me dis comment je vais faire pour la suite.
+APRES MIDI
+Solution nonn trouvé, création d'un proket vierge sans charte graphique, documentation sur l'authentification avc symfony, visionnage de vidéos dans un premier temps, mais je me rend compte que ce n'est pas adapté, je me suis ensuite rappelé que Marvine avait créer une doc, lecture complete de celle ci, et test. Le mail bot va m'etre tres utile :)

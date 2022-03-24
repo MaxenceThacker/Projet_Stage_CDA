@@ -1,0 +1,4 @@
+MATIN 
+Entretien téléphonique avec Clément. - Lecture complète des spéc fonctionnelles. - Modification à apporté. Ajout des modifications sur les spec.
+APRES MIDI
+Ajout des dernieres modifications des specification fonctionnelles.

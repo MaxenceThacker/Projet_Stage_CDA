@@ -1,0 +1,6 @@
+MATIN
+Début de la redaction de la charte graphique, génération du corp de l'appli avec symfony, probleme rencontré avec php, mais j'ai installé php 8 directement via le site que j'ai stocké dans un fichier php sur mon ordinateur, mais je me suis rendu compte que je pouvais utilisater le package PHP de WAMP.
+APRES MIDI 
+Lecture de documentation sur ccs et comment rediger une bonne charte graphique.
+Redaction des variable couleurs et du géneral.
+Probleme de git, impossible de push.
