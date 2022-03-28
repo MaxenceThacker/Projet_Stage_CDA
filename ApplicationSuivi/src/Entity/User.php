@@ -41,6 +41,24 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column(type: 'boolean')]
     private $isVerified = false;
 
+    #[ORM\Column(type: 'string', length: 150)]
+    private $NomUser;
+
+    #[ORM\Column(type: 'string', length: 150)]
+    private $PrenomUser;
+
+    #[ORM\Column(type: 'date')]
+    private $DdnUser;
+
+    #[ORM\Column(type: 'string', length: 255)]
+    private $AdresseUser;
+
+    #[ORM\Column(type: 'string', length: 255, nullable: true)]
+    private $ComplementAdresseUser;
+
+    #[ORM\Column(type: 'integer')]
+    private $numeroTelUser;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -113,48 +131,48 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
     public function getIdAlternant(): ?Alternants
     {
-        return $this->IdAlternant;
+        return $this->idAlternant;
     }
 
-    public function setIdAlternant(Alternants $IdAlternant): self
+    public function setIdAlternant(Alternants $idAlternant): self
     {
-        $this->IdAlternant = $IdAlternant;
+        $this->idAlternant = $idAlternant;
 
         return $this;
     }
 
     public function getIdTuteur(): ?Tuteurs
     {
-        return $this->IdTuteur;
+        return $this->idTuteur;
     }
 
-    public function setIdTuteur(?Tuteurs $IdTuteur): self
+    public function setIdTuteur(?Tuteurs $idTuteur): self
     {
-        $this->IdTuteur = $IdTuteur;
+        $this->idTuteur = $idTuteur;
 
         return $this;
     }
 
     public function getIdFormateur(): ?Formateurs
     {
-        return $this->IdFormateur;
+        return $this->idFormateur;
     }
 
-    public function setIdFormateur(?Formateurs $IdFormateur): self
+    public function setIdFormateur(?Formateurs $idFormateur): self
     {
-        $this->IdFormateur = $IdFormateur;
+        $this->idFormateur = $idFormateur;
 
         return $this;
     }
 
     public function getIdResponsableLegal(): ?ResponsablesLegaux
     {
-        return $this->IdResponsableLegal;
+        return $this->idResponsableLegal;
     }
 
-    public function setIdResponsableLegal(?ResponsablesLegaux $IdResponsableLegal): self
+    public function setIdResponsableLegal(?ResponsablesLegaux $idResponsableLegal): self
     {
-        $this->IdResponsableLegal = $IdResponsableLegal;
+        $this->idResponsableLegal = $idResponsableLegal;
 
         return $this;
     }
@@ -167,6 +185,78 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function setIsVerified(bool $isVerified): self
     {
         $this->isVerified = $isVerified;
+
+        return $this;
+    }
+
+    public function getNomUser(): ?string
+    {
+        return $this->nomUser;
+    }
+
+    public function setNomUser(string $nomUser): self
+    {
+        $this->nomUser = $nomUser;
+
+        return $this;
+    }
+
+    public function getPrenomUser(): ?string
+    {
+        return $this->prenomUser;
+    }
+
+    public function setPrenomUser(string $prenomUser): self
+    {
+        $this->prenomUser = $prenomUser;
+
+        return $this;
+    }
+
+    public function getDdnUser(): ?\DateTimeInterface
+    {
+        return $this->ddnUser;
+    }
+
+    public function setDdnUser(\DateTimeInterface $ddnUser): self
+    {
+        $this->ddnUser = $ddnUser;
+
+        return $this;
+    }
+
+    public function getAdresseUser(): ?string
+    {
+        return $this->adresseUser;
+    }
+
+    public function setAdresseUser(string $adresseUser): self
+    {
+        $this->adresseUser = $adresseUser;
+
+        return $this;
+    }
+
+    public function getComplementAdresseUser(): ?string
+    {
+        return $this->complementAdresseUser;
+    }
+
+    public function setComplementAdresseUser(?string $complementAdresseUser): self
+    {
+        $this->complementAdresseUser = $complementAdresseUser;
+
+        return $this;
+    }
+
+    public function getNumeroTelUser(): ?int
+    {
+        return $this->numeroTelUser;
+    }
+
+    public function setNumeroTelUser(int $numeroTelUser): self
+    {
+        $this->numeroTelUser = $numeroTelUser;
 
         return $this;
     }
