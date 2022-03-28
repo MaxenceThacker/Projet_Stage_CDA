@@ -42,6 +42,24 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column(type: 'boolean')]
     private $isVerified = false;
 
+    #[ORM\Column(type: 'string', length: 150)]
+    private $nameUser;
+
+    #[ORM\Column(type: 'string', length: 150)]
+    private $lastnameUser;
+
+    #[ORM\Column(type: 'date')]
+    private $ddnUser;
+
+    #[ORM\Column(type: 'string', length: 255)]
+    private $adresseUser;
+
+    #[ORM\Column(type: 'string', length: 255, nullable: true)]
+    private $compltAdresseUser;
+
+    #[ORM\Column(type: 'integer')]
+    private $numTelUser;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -188,6 +206,78 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function setIsVerified(bool $isVerified): self
     {
         $this->isVerified = $isVerified;
+
+        return $this;
+    }
+
+    public function getNameUser(): ?string
+    {
+        return $this->nameUser;
+    }
+
+    public function setNameUser(string $nameUser): self
+    {
+        $this->nameUser = $nameUser;
+
+        return $this;
+    }
+
+    public function getLastnameUser(): ?string
+    {
+        return $this->lastnameUser;
+    }
+
+    public function setLastnameUser(string $lastnameUser): self
+    {
+        $this->lastnameUser = $lastnameUser;
+
+        return $this;
+    }
+
+    public function getDdnUser(): ?\DateTimeInterface
+    {
+        return $this->ddnUser;
+    }
+
+    public function setDdnUser(\DateTimeInterface $ddnUser): self
+    {
+        $this->ddnUser = $ddnUser;
+
+        return $this;
+    }
+
+    public function getAdresseUser(): ?string
+    {
+        return $this->adresseUser;
+    }
+
+    public function setAdresseUser(string $adresseUser): self
+    {
+        $this->adresseUser = $adresseUser;
+
+        return $this;
+    }
+
+    public function getCompltAdresseUser(): ?string
+    {
+        return $this->compltAdresseUser;
+    }
+
+    public function setCompltAdresseUser(?string $compltAdresseUser): self
+    {
+        $this->compltAdresseUser = $compltAdresseUser;
+
+        return $this;
+    }
+
+    public function getNumTelUser(): ?int
+    {
+        return $this->numTelUser;
+    }
+
+    public function setNumTelUser(int $numTelUser): self
+    {
+        $this->numTelUser = $numTelUser;
 
         return $this;
     }
