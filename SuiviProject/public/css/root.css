@@ -1,0 +1,105 @@
+/* ******** couleur ******* */
+:root
+{
+    --white:                   #ffffff;
+    --gray:                    #c1e1eb;
+    --gray1:                   #d9f9ff;
+    --green:                   #01775a;
+    --blue:                    #80aef1;
+}
+
+/* ******** général ******* */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;  
+}
+
+html{
+    background-color: var(--gray);
+}
+
+div, header, nav{
+    display: flex;
+    flex: 1;
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+}
+
+/* ****** header ****** */
+header{
+    background-color: var(--gray);
+    justify-content: space-around;
+}
+
+/* ****** contenue ****** */
+#conteneur{
+    background-color: var(--gray);
+    min-height: 100vh;
+    /** mettre padding à voir **/
+}
+
+/* ******** liste ******* */
+#liste{
+    flex-direction: column;
+    border: solid var(--blue) 1px;
+}
+
+.ligne{
+    justify-content: center;
+    max-height: 10vh;
+    border: solid var(--blue) 1px;
+}
+
+
+.cellule{
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.entete{
+    background-color: var(--green);
+}
+
+.contenueListe{
+    background-color: var(--gray1);
+}
+
+
+/* ***** MEDIA QUERIES ***** */
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) {
+        #conteneur{
+            padding: 5% 2%;
+        }
+        .ligne{
+            max-height: fit-content;
+            width: 100%;
+        }
+        .cellule{
+            font-size: 0.75em;
+        }        
+
+    }
+@media only screen 
+    and (min-device-width : 414px) 
+    and (max-device-height : 896px) 
+    and (-webkit-device-pixel-ratio : 2) {
+        #conteneur{
+            padding: 5% 2%;
+        }
+        .ligne{
+            max-height: fit-content;
+            width: 100%;
+        }
+        .cellule{
+            font-size: 0.75em;
+        }        
+
+    } 
