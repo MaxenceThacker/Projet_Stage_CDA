@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}ResponsablesLegaux index{% endblock %}
+
+{% block body %}
+    <h1>ResponsablesLegaux index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for responsables_legaux in responsables_legauxes %}
+            <tr>
+                <td>{{ responsables_legaux.id }}</td>
+                <td>
+                    <a href="{{ path('app_responsables_legaux_show', {'id': responsables_legaux.id}) }}">show</a>
+                    <a href="{{ path('app_responsables_legaux_edit', {'id': responsables_legaux.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="2">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_responsables_legaux_new') }}">Create new</a>
+{% endblock %}

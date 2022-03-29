@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Formations index{% endblock %}
+
+{% block body %}
+    <h1>Formations index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>SigleFormation</th>
+                <th>IntituleFormation</th>
+                <th>CodeTitreFormation</th>
+                <th>MillesimeFormation</th>
+                <th>DateParutionFormation</th>
+                <th>NsfFormation</th>
+                <th>RomeFormation</th>
+                <th>DateFinValdteAggrmentFormation</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for formation in formations %}
+            <tr>
+                <td>{{ formation.id }}</td>
+                <td>{{ formation.sigleFormation }}</td>
+                <td>{{ formation.intituleFormation }}</td>
+                <td>{{ formation.codeTitreFormation }}</td>
+                <td>{{ formation.millesimeFormation ? formation.millesimeFormation|date('Y-m-d') : '' }}</td>
+                <td>{{ formation.dateParutionFormation ? formation.dateParutionFormation|date('Y-m-d') : '' }}</td>
+                <td>{{ formation.nsfFormation }}</td>
+                <td>{{ formation.romeFormation }}</td>
+                <td>{{ formation.dateFinValdteAggrmentFormation ? formation.dateFinValdteAggrmentFormation|date('Y-m-d') : '' }}</td>
+                <td>
+                    <a href="{{ path('app_formations_show', {'id': formation.id}) }}">show</a>
+                    <a href="{{ path('app_formations_edit', {'id': formation.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="10">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_formations_new') }}">Create new</a>
+{% endblock %}
