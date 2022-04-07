@@ -1,13 +1,13 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Edit Formateurs{% endblock %}
+{% block title %}Edition Formateurs{% endblock %}
 
 {% block body %}
-    <h1>Edit Formateurs</h1>
+    <h1>Editer un formateur</h1>
 
     {{ include('formateurs/_form.html.twig', {'button_label': 'Update'}) }}
 
-    <a href="{{ path('app_formateurs_index') }}">back to list</a>
+    <a class"button" href="{{ path('app_formateurs_index') }}">Retour à la liste</a>
 
     {{ include('formateurs/_delete_form.html.twig') }}
 {% endblock %}

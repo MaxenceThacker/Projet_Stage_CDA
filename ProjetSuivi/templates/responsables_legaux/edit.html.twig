@@ -1,13 +1,13 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Edit ResponsablesLegaux{% endblock %}
+{% block title %}Edition Responsables Legaux{% endblock %}
 
 {% block body %}
-    <h1>Edit ResponsablesLegaux</h1>
+    <h1>Editer un responsable légal </h1>
 
     {{ include('responsables_legaux/_form.html.twig', {'button_label': 'Update'}) }}
 
-    <a href="{{ path('app_responsables_legaux_index') }}">back to list</a>
+    <a class"button" href="{{ path('app_responsables_legaux_index') }}">Retour à la liste</a>
 
     {{ include('responsables_legaux/_delete_form.html.twig') }}
 {% endblock %}
