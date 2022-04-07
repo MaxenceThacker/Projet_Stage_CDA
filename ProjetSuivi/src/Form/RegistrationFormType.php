@@ -17,14 +17,7 @@ class RegistrationFormType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('emailUser', EmailType::class, [
-                'attr' => ['autocomplete' => 'email'],
-                'constraints' => [
-                    new NotBlank([
-                        'message' => 'Veuillez entrer une adresse email valide',
-                    ]),
-                ],
-            ])
+            ->add('emailUser')
             ->add('agreeTerms', CheckboxType::class, [
                 'mapped' => false,
                 'constraints' => [
@@ -50,11 +43,6 @@ class RegistrationFormType extends AbstractType
                     ]),
                 ],
             ])
-            ->add('nomUser')
-            ->add('prenomUser')
-            ->add('AdresseUser')
-            ->add('compltAdresseUser')
-            ->add('numTelUser')
         ;
     }
 
