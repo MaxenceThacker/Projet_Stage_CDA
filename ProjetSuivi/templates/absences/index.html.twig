@@ -8,16 +8,14 @@
     <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
-                <th>DateAbsence</th>
-                <th>NbrHeureAbsence</th>
+                <th>Date de l'absence</th>
+                <th>Nombre d'heure d'absence</th>
                 <th>actions</th>
             </tr>
         </thead>
         <tbody>
         {% for absence in absences %}
             <tr>
-                <td>{{ absence.id }}</td>
                 <td>{{ absence.dateAbsence ? absence.dateAbsence|date('Y-m-d') : '' }}</td>
                 <td>{{ absence.nbrHeureAbsence }}</td>
                 <td>

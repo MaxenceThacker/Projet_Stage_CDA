@@ -128,7 +128,6 @@ header {
 footer {
     text-align: center;
     height: 20vh;
-    position: fixed;
     bottom: 0;
     width: 100%;
 }

@@ -12,7 +12,10 @@ class FormateursType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('idUser')
+        ->add('nomUser')
+        ->add('prenomUser')
+        ->add('ddnUser')
+        ->add('numTelUser')
         ;
     }
 

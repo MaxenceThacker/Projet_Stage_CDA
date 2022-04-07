@@ -8,14 +8,20 @@
     <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Date de naissance</th>
+                <th>Numéro de Téléphone</th>
                 <th>actions</th>
             </tr>
         </thead>
         <tbody>
         {% for formateur in formateurs %}
             <tr>
-                <td>{{ formateur.id }}</td>
+                <td>{{ user.nomUser }}</td>
+                <td>{{ user.prenomUser }}</td>
+                <td>{{ user.ddnUser ? user.ddnUser|date('Y-m-d') : '' }}</td>
+                <td>{{ user.numTelUser }}</td>
                 <td>
                     <a href="{{ path('app_formateurs_show', {'id': formateur.id}) }}">show</a>
                     <a href="{{ path('app_formateurs_edit', {'id': formateur.id}) }}">edit</a>

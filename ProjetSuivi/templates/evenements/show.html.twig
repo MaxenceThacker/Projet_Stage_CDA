@@ -8,15 +8,15 @@
     <table class="table">
         <tbody>
             <tr>
-                <th>Id</th>
+                <th>Identifiant de l'évenement</th>
                 <td>{{ evenement.id }}</td>
             </tr>
             <tr>
-                <th>HeureEvenement</th>
+                <th>Heure de l'évenement</th>
                 <td>{{ evenement.heureEvenement ? evenement.heureEvenement|date('H:i:s') : '' }}</td>
             </tr>
             <tr>
-                <th>DateEvenement</th>
+                <th>Date de l'évenement</th>
                 <td>{{ evenement.dateEvenement ? evenement.dateEvenement|date('Y-m-d') : '' }}</td>
             </tr>
         </tbody>

@@ -8,16 +8,16 @@
     <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
-                <th>AdresseCentre</th>
-                <th>CompltAdresseCentre</th>
+                <th>Nom du centre</th>
+                <th>Adresse du centre</th>
+                <th>Complement d'adresse du centre</th>
                 <th>actions</th>
             </tr>
         </thead>
         <tbody>
         {% for centre in centres %}
             <tr>
-                <td>{{ centre.id }}</td>
+                <td>{{ centre.nomCentre }}</td>
                 <td>{{ centre.adresseCentre }}</td>
                 <td>{{ centre.compltAdresseCentre }}</td>
                 <td>

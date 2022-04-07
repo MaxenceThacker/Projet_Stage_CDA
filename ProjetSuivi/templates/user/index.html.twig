@@ -8,34 +8,21 @@
     <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
-                <th>EmailUser</th>
+                <th>Adresse Email</th>
                 <th>Roles</th>
-                <th>Password</th>
-                <th>IsVerified</th>
-                <th>NomUser</th>
-                <th>PrenomUser</th>
-                <th>DdnUser</th>
-                <th>AdresseUser</th>
-                <th>CompltAdresseUser</th>
-                <th>NumTelUser</th>
+                <th>Mot de passe</th>
+                <th>est Verifié</th>
                 <th>actions</th>
             </tr>
         </thead>
         <tbody>
         {% for user in users %}
             <tr>
-                <td>{{ user.id }}</td>
                 <td>{{ user.emailUser }}</td>
-                <td>{{ user.roles ? user.roles|json_encode : '' }}</td>
+                <td>{{ user.alternants }}</td>
+                {# user.roles ? user.roles|json_encode : '' #}
                 <td>{{ user.password }}</td>
                 <td>{{ user.isVerified ? 'Yes' : 'No' }}</td>
-                <td>{{ user.nomUser }}</td>
-                <td>{{ user.prenomUser }}</td>
-                <td>{{ user.ddnUser ? user.ddnUser|date('Y-m-d') : '' }}</td>
-                <td>{{ user.adresseUser }}</td>
-                <td>{{ user.compltAdresseUser }}</td>
-                <td>{{ user.numTelUser }}</td>
                 <td>
                     <a href="{{ path('app_user_show', {'id': user.id}) }}">show</a>
                     <a href="{{ path('app_user_edit', {'id': user.id}) }}">edit</a>
@@ -49,5 +36,5 @@
         </tbody>
     </table>
 
-    <a href="{{ path('app_user_new') }}">Create new</a>
+    <a class="button" href="{{ path('app_user_new') }}">Nouveau</a>
 {% endblock %}

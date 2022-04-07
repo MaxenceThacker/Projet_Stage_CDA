@@ -16,16 +16,6 @@ class UserType extends AbstractType
             ->add('roles')
             ->add('password')
             ->add('isVerified')
-            ->add('nomUser')
-            ->add('prenomUser')
-            ->add('ddnUser')
-            ->add('adresseUser')
-            ->add('compltAdresseUser')
-            ->add('numTelUser')
-            ->add('formateurs')
-            ->add('tuteurs')
-            ->add('responsablesLegaux')
-            ->add('alternants')
         ;
     }
 

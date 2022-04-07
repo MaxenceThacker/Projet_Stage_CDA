@@ -8,14 +8,24 @@
     <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Date de naissance</th>
+                <th>Adresse</th>
+                <th>Complément d'Adresse</th>
+                <th>Numéro de Téléphone</th>
                 <th>actions</th>
             </tr>
         </thead>
         <tbody>
         {% for alternant in alternants %}
             <tr>
-                <td>{{ alternant.id }}</td>
+                <td>{{ user.nomUser }}</td>
+                <td>{{ user.prenomUser }}</td>
+                <td>{{ user.ddnUser ? user.ddnUser|date('Y-m-d') : '' }}</td>
+                <td>{{ user.adresseUser }}</td>
+                <td>{{ user.compltAdresseUser }}</td>
+                <td>{{ user.numTelUser }}</td>
                 <td>
                     <a href="{{ path('app_alternants_show', {'id': alternant.id}) }}">show</a>
                     <a href="{{ path('app_alternants_edit', {'id': alternant.id}) }}">edit</a>

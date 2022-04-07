@@ -12,7 +12,12 @@ class AlternantsType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('idUser')
+            ->add('nomUser')
+            ->add('prenomUser')
+            ->add('ddnUser')
+            ->add('adresseUser')
+            ->add('compltAdresseUser')
+            ->add('numTelUser')
         ;
     }
 

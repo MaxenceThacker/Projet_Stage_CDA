@@ -8,16 +8,14 @@
     <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
-                <th>HeureEvenement</th>
-                <th>DateEvenement</th>
+                <th>Heure de l'évenement</th>
+                <th>Date de l'évenement</th>
                 <th>actions</th>
             </tr>
         </thead>
         <tbody>
         {% for evenement in evenements %}
             <tr>
-                <td>{{ evenement.id }}</td>
                 <td>{{ evenement.heureEvenement ? evenement.heureEvenement|date('H:i:s') : '' }}</td>
                 <td>{{ evenement.dateEvenement ? evenement.dateEvenement|date('Y-m-d') : '' }}</td>
                 <td>
