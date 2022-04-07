@@ -12,6 +12,7 @@ class CentresType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
+            ->add('nmCentre')
             ->add('adresseCentre')
             ->add('compltAdresseCentre')
         ;

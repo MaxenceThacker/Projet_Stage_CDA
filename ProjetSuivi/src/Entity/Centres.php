@@ -14,6 +14,9 @@ class Centres
     private $id;
 
     #[ORM\Column(type: 'string', length: 255)]
+    private $nomCentre;
+
+    #[ORM\Column(type: 'string', length: 255)]
     private $adresseCentre;
 
     #[ORM\Column(type: 'string', length: 255, nullable: true)]
@@ -22,6 +25,18 @@ class Centres
     public function getId(): ?int
     {
         return $this->id;
+    }
+
+    public function getNomCentre(): ?string
+    {
+        return $this->nomCentre;
+    }
+
+    public function setNomCentre(string $nomCentre): self
+    {
+        $this->nomCentre = $nomCentre;
+
+        return $this;
     }
 
     public function getAdresseCentre(): ?string
