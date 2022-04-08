@@ -114,6 +114,16 @@ img {
     font-weight: bold;
 }
 
+.buttonSansOmbre {
+    background-color: var(--blue);
+    color: white;
+    padding: 0.5em;
+    border: 2px solid var(--white);
+    border-radius: 20px;
+    cursor: pointer;
+    width: 75%;
+    font-weight: bold;
+}
 /* ****** header ****** */
 header {
     justify-content: space-around;
@@ -128,7 +138,8 @@ header {
 footer {
     text-align: center;
     height: 20vh;
-    bottom: 0;
+    position:absolute;
+    bottom:0;
     width: 100%;
 }
 

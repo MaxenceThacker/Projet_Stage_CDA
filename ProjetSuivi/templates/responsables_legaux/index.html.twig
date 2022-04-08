@@ -8,14 +8,24 @@
     <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Date de naissance</th>
+                <th>Adresse</th>
+                <th>Complément d'Adresse</th>
+                <th>Numéro de Téléphone</th>
                 <th>actions</th>
             </tr>
         </thead>
         <tbody>
         {% for responsables_legaux in responsables_legauxes %}
             <tr>
-                <td>{{ responsables_legaux.id }}</td>
+                <td>{{ user.nomUser }}</td>
+                <td>{{ user.prenomUser }}</td>
+                <td>{{ user.ddnUser ? user.ddnUser|date('Y-m-d') : '' }}</td>
+                <td>{{ user.adresseUser }}</td>
+                <td>{{ user.compltAdresseUser }}</td>
+                <td>{{ user.numTelUser }}</td>
                 <td>
                     <a href="{{ path('app_responsables_legaux_show', {'id': responsables_legaux.id}) }}">show</a>
                     <a href="{{ path('app_responsables_legaux_edit', {'id': responsables_legaux.id}) }}">edit</a>

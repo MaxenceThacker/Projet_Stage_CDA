@@ -12,14 +12,14 @@ class FormationsType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('sigleFormation')
-            ->add('intituleFormation')
-            ->add('codeTitreFormation')
-            ->add('millesimeFormation')
-            ->add('dateParutionFormation')
-            ->add('nsfFormation')
-            ->add('romeFormation')
-            ->add('dateFinValdteAggrmtFormation')
+            ->add('SigleFormation', TextType::class, ['label' => 'Sigle'])
+            ->add('intituleFormation', TextType::class, ['label' => 'Intitule'])
+            ->add('codeTitreFormation', TextType::class, ['label' => 'Code Titre'])
+            ->add('millesimeFormation', DateType::class, ['label' => 'Millesime'])
+            ->add('dateParutionFormation', DateType::class, ['label' => 'Date de parution'])
+            ->add('nsfFormation', TextType::class, ['label' => 'Nomenclature des spécialités'])
+            ->add('romeFormation', TextType::class, ['label' => 'Code ROME'])
+            ->add('dateFinValdteAggrmtFormation',  DateType::class, ['label' => 'Date de Fin de Validité Aggrement'])
         ;
     }
 

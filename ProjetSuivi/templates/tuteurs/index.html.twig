@@ -8,14 +8,20 @@
     <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Date de naissance</th>
+                <th>Numéro de Téléphone</th>
                 <th>actions</th>
             </tr>
         </thead>
         <tbody>
         {% for tuteur in tuteurs %}
             <tr>
-                <td>{{ tuteur.id }}</td>
+                <td>{{ user.nomUser }}</td>
+                <td>{{ user.prenomUser }}</td>
+                <td>{{ user.ddnUser ? user.ddnUser|date('Y-m-d') : '' }}</td>
+                <td>{{ user.numTelUser }}</td>
                 <td>
                     <a href="{{ path('app_tuteurs_show', {'id': tuteur.id}) }}">show</a>
                     <a href="{{ path('app_tuteurs_edit', {'id': tuteur.id}) }}">edit</a>

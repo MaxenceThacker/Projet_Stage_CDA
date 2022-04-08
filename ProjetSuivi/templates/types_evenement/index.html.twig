@@ -8,15 +8,13 @@
     <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
-                <th>LibelleTypeEvenement</th>
+                <th>Libelle du type d'événement</th>
                 <th>actions</th>
             </tr>
         </thead>
         <tbody>
         {% for types_evenement in types_evenements %}
             <tr>
-                <td>{{ types_evenement.id }}</td>
                 <td>{{ types_evenement.libelleTypeEvenement }}</td>
                 <td>
                     <a href="{{ path('app_types_evenement_show', {'id': types_evenement.id}) }}">show</a>
