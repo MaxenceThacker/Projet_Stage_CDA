@@ -19,17 +19,17 @@
                 <td>{{ evenement.heureEvenement ? evenement.heureEvenement|date('H:i:s') : '' }}</td>
                 <td>{{ evenement.dateEvenement ? evenement.dateEvenement|date('Y-m-d') : '' }}</td>
                 <td>
-                    <a href="{{ path('app_evenements_show', {'id': evenement.id}) }}">show</a>
-                    <a href="{{ path('app_evenements_edit', {'id': evenement.id}) }}">edit</a>
+                    <a class="button" href="{{ path('app_evenements_Voir', {'id': evenement.id}) }}">Voir</a>
+                    <a class="button" href="{{ path('app_evenements_Editer', {'id': evenement.id}) }}">Editer</a>
                 </td>
             </tr>
         {% else %}
             <tr>
-                <td colspan="4">no records found</td>
+                <td colspan="4">Aucun enregistrement trouvé</td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-    <a href="{{ path('app_evenements_new') }}">Create new</a>
+    <a class="button" href="{{ path('app_evenements_new') }}">Nouveau</a>
 {% endblock %}

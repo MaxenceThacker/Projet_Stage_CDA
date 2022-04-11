@@ -23,17 +23,17 @@
                 <td>{{ user.ddnUser ? user.ddnUser|date('Y-m-d') : '' }}</td>
                 <td>{{ user.numTelUser }}</td>
                 <td>
-                    <a href="{{ path('app_tuteurs_show', {'id': tuteur.id}) }}">show</a>
-                    <a href="{{ path('app_tuteurs_edit', {'id': tuteur.id}) }}">edit</a>
+                    <a class="button" href="{{ path('app_tuteurs_Voir', {'id': tuteur.id}) }}">Voir</a>
+                    <a class="button" href="{{ path('app_tuteurs_Editer', {'id': tuteur.id}) }}">Editer</a>
                 </td>
             </tr>
         {% else %}
             <tr>
-                <td colspan="2">no records found</td>
+                <td colspan="2">Aucun enregistrement trouvé</td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-    <a href="{{ path('app_tuteurs_new') }}">Create new</a>
+    <a class="button" href="{{ path('app_tuteurs_new') }}">Nouveau</a>
 {% endblock %}

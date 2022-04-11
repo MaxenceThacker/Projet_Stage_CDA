@@ -19,17 +19,17 @@
                 <td>{{ absence.dateAbsence ? absence.dateAbsence|date('Y-m-d') : '' }}</td>
                 <td>{{ absence.nbrHeureAbsence }}</td>
                 <td>
-                    <a href="{{ path('app_absences_show', {'id': absence.id}) }}">show</a>
-                    <a href="{{ path('app_absences_edit', {'id': absence.id}) }}">edit</a>
+                    <a class="button" href="{{ path('app_absences_Voir', {'id': absence.id}) }}">Voir</a>
+                    <a class="button" href="{{ path('app_absences_Editer', {'id': absence.id}) }}">Editer</a>
                 </td>
             </tr>
         {% else %}
             <tr>
-                <td colspan="4">no records found</td>
+                <td colspan="4">Aucun enregistrement trouvé</td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-    <a href="{{ path('app_absences_new') }}">Create new</a>
+    <a class="button" href="{{ path('app_absences_new') }}">Nouveau</a>
 {% endblock %}

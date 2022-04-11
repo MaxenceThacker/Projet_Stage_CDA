@@ -17,17 +17,17 @@
             <tr>
                 <td>{{ types_absence.libelleTypeAbsence }}</td>
                 <td>
-                    <a href="{{ path('app_types_absence_show', {'id': types_absence.id}) }}">show</a>
-                    <a href="{{ path('app_types_absence_edit', {'id': types_absence.id}) }}">edit</a>
+                    <a class="button" href="{{ path('app_types_absence_Voir', {'id': types_absence.id}) }}">Voir</a>
+                    <a class="button" href="{{ path('app_types_absence_Editer', {'id': types_absence.id}) }}">Editer</a>
                 </td>
             </tr>
         {% else %}
             <tr>
-                <td colspan="3">no records found</td>
+                <td colspan="3">Aucun enregistrement trouvé</td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-    <a href="{{ path('app_types_absence_new') }}">Create new</a>
+    <a class="button" href="{{ path('app_types_absence_new') }}">Nouveau</a>
 {% endblock %}

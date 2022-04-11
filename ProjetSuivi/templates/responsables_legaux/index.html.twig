@@ -27,17 +27,17 @@
                 <td>{{ user.compltAdresseUser }}</td>
                 <td>{{ user.numTelUser }}</td>
                 <td>
-                    <a href="{{ path('app_responsables_legaux_show', {'id': responsables_legaux.id}) }}">show</a>
-                    <a href="{{ path('app_responsables_legaux_edit', {'id': responsables_legaux.id}) }}">edit</a>
+                    <a class="button" href="{{ path('app_responsables_legaux_Voir', {'id': responsables_legaux.id}) }}">Voir</a>
+                    <a class="button" href="{{ path('app_responsables_legaux_Editer', {'id': responsables_legaux.id}) }}">Editer</a>
                 </td>
             </tr>
         {% else %}
             <tr>
-                <td colspan="2">no records found</td>
+                <td colspan="2">Aucun enregistrement trouvé</td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-    <a href="{{ path('app_responsables_legaux_new') }}">Create new</a>
+    <a class="button" href="{{ path('app_responsables_legaux_new') }}">Nouveau</a>
 {% endblock %}

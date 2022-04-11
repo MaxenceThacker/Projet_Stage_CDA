@@ -24,13 +24,13 @@
                 <td>{{ user.password }}</td>
                 <td>{{ user.isVerified ? 'Yes' : 'No' }}</td>
                 <td>
-                    <a href="{{ path('app_user_show', {'id': user.id}) }}">show</a>
-                    <a href="{{ path('app_user_edit', {'id': user.id}) }}">edit</a>
+                    <a class="button" href="{{ path('app_user_Voir', {'id': user.id}) }}">Voir</a>
+                    <a class="button" href="{{ path('app_user_Editer', {'id': user.id}) }}">Editer</a>
                 </td>
             </tr>
         {% else %}
             <tr>
-                <td colspan="12">no records found</td>
+                <td colspan="12">Aucun enregistrement trouvé</td>
             </tr>
         {% endfor %}
         </tbody>

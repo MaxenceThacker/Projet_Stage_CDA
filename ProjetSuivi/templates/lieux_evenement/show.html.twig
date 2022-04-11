@@ -18,9 +18,9 @@
         </tbody>
     </table>
 
-    <a href="{{ path('app_lieux_evenement_index') }}">back to list</a>
+    <a class="button" href="{{ path('app_lieux_evenement_index') }}">Retour à la liste</a>
 
-    <a href="{{ path('app_lieux_evenement_edit', {'id': lieux_evenement.id}) }}">edit</a>
+    <a class="button" href="{{ path('app_lieux_evenement_Editer', {'id': lieux_evenement.id}) }}">Editer</a>
 
     {{ include('lieux_evenement/_delete_form.html.twig') }}
 {% endblock %}
