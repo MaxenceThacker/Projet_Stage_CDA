@@ -24,19 +24,38 @@ security:
             logout:
                 path: app_logout
                 # where to redirect after logout
-                # target: app_any_route
+                target: app_login
 
             # activate different ways to authenticate
             # https://symfony.com/doc/current/security.html#the-firewall
 
             # https://symfony.com/doc/current/security/impersonating_user.html
             # switch_user: true
+    role_hierarchy:
+         ROLE_ALTERNANT: ROLE_USER
+         ROLE_TUTEUR: ROLE_USER
+         ROLE_RESPONSABLE_LEGAL: ROLE_USER
+         ROLE_FORMATEUR: ROLE_USER
+         ROLE_ADMIN: ROLE_ADMIN
+         ROLE_FORMATEURADMIN: [ROLE_ADMIN, ROLE_FORMATEUR]
+         ROLE_TUTEURADMIN: [ROLE_ADMIN, ROLE_TUTEUR]
 
     # Easy way to control access for large sections of your site
     # Note: Only the *first* access control that matches will be used
     access_control:
-        # - { path: ^/admin, roles: ROLE_ADMIN }
-        # - { path: ^/profile, roles: ROLE_USER }
+         # require ROLE_ADMIN for /admin
+         - { path: ^/admin, roles: ROLE_ADMIN }
+         # require ROLE_TUTEUR for /tuteur
+         - { path: ^/tuteur, roles: ROLE_TUTEUR }
+         # require ROLE_RESPONSABLE_LEGAL for /responsable
+         - { path: ^/responsable, roles: ROLE_RESPONSABLE_LEGAL }
+         # require ROLE_FORMATEUR for /formateur
+         - { path: ^/formateur, roles: ROLE_FORMATEUR }
+         # require ROLE_ALTERNANT for /alternant
+         - { path: ^/alternant, roles: ROLE_ALTERNANT }
+         # require IS_AUTHENTICATED_ANONYMOUSLY for /login
+         - { path: '^/login$', roles: IS_AUTHENTICATED_ANONYMOUSLY }
+
 
 when@test:
     security:
