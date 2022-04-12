@@ -14,9 +14,9 @@
         </tbody>
     </table>
 
-    <a href="{{ path('app_alternants_index') }}">back to list</a>
+    <a class="button" href="{{ path('app_alternants_index') }}">Retour à la liste</a>
 
-    <a href="{{ path('app_alternants_edit', {'id': alternant.id}) }}">edit</a>
+    <a class="button" href="{{ path('app_alternants_Editer', {'id': alternant.id}) }}">Editer</a>
 
-    {{ include('alternants/_delete_form.html.twig') }}
+    {{ include('alternants/_delete_form.html.twig') }} 
 {% endblock %}

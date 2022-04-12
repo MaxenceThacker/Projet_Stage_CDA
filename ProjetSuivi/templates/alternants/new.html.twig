@@ -1,11 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}New Alternants{% endblock %}
+{% block title %}Nouvel Alternants{% endblock %}
 
 {% block body %}
-    <h1>Create new Alternants</h1>
+    <h1>Créer un nouvel Alternant</h1>
 
     {{ include('alternants/_form.html.twig') }}
 
-    <a href="{{ path('app_alternants_index') }}">back to list</a>
+    <a class="button" href="{{ path('app_alternants_index') }}">Retour à la liste</a>
 {% endblock %}

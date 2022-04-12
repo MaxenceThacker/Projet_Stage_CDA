@@ -17,17 +17,17 @@
             <tr>
                 <td>{{ document.libelleDocument }}</td>
                 <td>
-                    <a href="{{ path('app_documents_show', {'id': document.id}) }}">show</a>
-                    <a href="{{ path('app_documents_edit', {'id': document.id}) }}">edit</a>
+                    <a class="button" href="{{ path('app_documents_Voir', {'id': document.id}) }}">Voir</a>
+                    <a class="button" href="{{ path('app_documents_Editer', {'id': document.id}) }}">Editer</a>
                 </td>
             </tr>
         {% else %}
             <tr>
-                <td colspan="3">no records found</td>
+                <td colspan="3">Aucun enregistrement trouvé</td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-    <a href="{{ path('app_documents_new') }}">Create new</a>
+    <a class="button" href="{{ path('app_documents_new') }}">Nouveau</a>
 {% endblock %}

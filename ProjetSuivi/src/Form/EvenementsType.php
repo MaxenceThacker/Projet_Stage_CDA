@@ -6,14 +6,19 @@ use App\Entity\Evenements;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Validator\Constraints\Length;
+use Symfony\Component\Validator\Constraints\NotBlank;
+use Symfony\Component\Form\Extension\Core\Type\DateType;
+use Symfony\Component\Form\Extension\Core\Type\TimeType;
+
 
 class EvenementsType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('heureEvenement')
-            ->add('dateEvenement')
+            ->add('heureEvenement', TimeType::class, [ 'label' => 'date de l\'absence'])
+            ->add('dateEvenement', DateType::class, [ 'label' => 'date de l\'évenement'])
         ;
     }
 

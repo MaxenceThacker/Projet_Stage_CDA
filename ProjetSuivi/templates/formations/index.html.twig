@@ -31,13 +31,13 @@
                 <td>{{ formation.romeFormation }}</td>
                 <td>{{ formation.dateFinValdteAggrmtFormation ? formation.dateFinValdteAggrmtFormation|date('Y-m-d') : '' }}</td>
                 <td>
-                    <a class="buttonSansOmbre" href="{{ path('app_formations_show', {'id': formation.id}) }}">Voir</a>
-                    <a class="buttonSansOmbre" href="{{ path('app_formations_edit', {'id': formation.id}) }}">Editer</a>
+                    <a class="buttonSansOmbre" href="{{ path('app_formations_Voir', {'id': formation.id}) }}">Voir</a>
+                    <a class="buttonSansOmbre" href="{{ path('app_formations_Editer', {'id': formation.id}) }}">Editer</a>
                 </td>
             </tr>
         {% else %}
             <tr>
-                <td colspan="10">no records found</td>
+                <td colspan="10">Aucun enregistrement trouvé</td>
             </tr>
         {% endfor %}
         </tbody>

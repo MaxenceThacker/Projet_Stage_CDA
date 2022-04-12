@@ -3,9 +3,9 @@
 {% block title %}New Centres{% endblock %}
 
 {% block body %}
-    <h1>Create new Centres</h1>
+    <h1>Nouveau Centres</h1>
 
     {{ include('centres/_form.html.twig') }}
 
-    <a href="{{ path('app_centres_index') }}">back to list</a>
+    <a class="button" href="{{ path('app_centres_index') }}">Retour à la liste</a>
 {% endblock %}
