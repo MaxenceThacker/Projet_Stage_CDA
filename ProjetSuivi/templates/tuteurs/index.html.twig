@@ -23,8 +23,8 @@
                 <td>{{ user.ddnUser ? user.ddnUser|date('Y-m-d') : '' }}</td>
                 <td>{{ user.numTelUser }}</td>
                 <td>
-                    <a class="button" href="{{ path('app_tuteurs_Voir', {'id': tuteur.id}) }}">Voir</a>
-                    <a class="button" href="{{ path('app_tuteurs_Editer', {'id': tuteur.id}) }}">Editer</a>
+                    <a class="button" href="{{ path('app_tuteurs_show', {'id': tuteur.id}) }}">Voir</a>
+                    <a class="button" href="{{ path('app_tuteurs_edit', {'id': tuteur.id}) }}">Editer</a>
                 </td>
             </tr>
         {% else %}

@@ -24,8 +24,8 @@
                 <td>{{ user.password }}</td>
                 <td>{{ user.isVerified ? 'Yes' : 'No' }}</td>
                 <td>
-                    <a class="button" href="{{ path('app_user_Voir', {'id': user.id}) }}">Voir</a>
-                    <a class="button" href="{{ path('app_user_Editer', {'id': user.id}) }}">Editer</a>
+                    <a class="button" href="{{ path('app_user_show', {'id': user.id}) }}">Voir</a>
+                    <a class="button" href="{{ path('app_user_edit', {'id': user.id}) }}">Editer</a>
                 </td>
             </tr>
         {% else %}

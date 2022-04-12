@@ -27,8 +27,8 @@
                 <td>{{ user.compltAdresseUser }}</td>
                 <td>{{ user.numTelUser }}</td>
                 <td>
-                    <a class="button" href="{{ path('app_alternants_Voir', {'id': alternant.id}) }}">Voir</a>
-                    <a class="button" href="{{ path('app_alternants_Editer', {'id': alternant.id}) }}">Editer</a>
+                    <a class="button" href="{{ path('app_alternants_show', {'id': alternant.id}) }}">Voir</a>
+                    <a class="button" href="{{ path('app_alternants_edit', {'id': alternant.id}) }}">Editer</a>
                 </td>
             </tr>
         {% else %}

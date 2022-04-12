@@ -48,7 +48,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column(type: 'string', length: 150)]
     private $prenomUser;
 
-    #[ORM\Column(type: 'date')]
+    #[ORM\Column(type: 'datetime')]
     private $ddnUser;
 
     #[ORM\Column(type: 'string', length: 255)]
@@ -59,6 +59,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
     #[ORM\Column(type: 'integer')]
     private $numTelUser;
+
 
     public function getId(): ?int
     {

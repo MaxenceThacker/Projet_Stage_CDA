@@ -17,8 +17,8 @@
             <tr>
                 <td>{{ types_evenement.libelleTypeEvenement }}</td>
                 <td>
-                    <a class="button" href="{{ path('app_types_evenement_Voir', {'id': types_evenement.id}) }}">Voir</a>
-                    <a class="button" href="{{ path('app_types_evenement_Editer', {'id': types_evenement.id}) }}">Editer</a>
+                    <a class="button" href="{{ path('app_types_evenement_show', {'id': types_evenement.id}) }}">Voir</a>
+                    <a class="button" href="{{ path('app_types_evenement_edit', {'id': types_evenement.id}) }}">Editer</a>
                 </td>
             </tr>
         {% else %}

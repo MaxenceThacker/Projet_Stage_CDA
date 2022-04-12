@@ -4,6 +4,10 @@ namespace App\Form;
 
 use App\Entity\User;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
+use Symfony\Component\Form\Extension\Core\Type\BirthdayType;
+use Symfony\Component\Form\Extension\Core\Type\TelType;
 use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -43,11 +47,12 @@ class RegistrationFormType extends AbstractType
                     ]),
                 ],
             ])
-            ->add('nomUser')
-            ->add('prenomUser')
-            ->add('adresseUser')
-            ->add('compltAdresseUser')
-            ->add('numTelUser')
+            ->add('nomUser', TextType::class, ['label' => 'Nom'])
+            ->add('prenomUser', TextType::class, ['label' => 'Prénom'])
+            ->add('ddnUser', BirthdayType::class, ['label' => 'Date de naissance'])
+            ->add('adresseUser', TextareaType::class, ['label' => 'Adresse'])
+            ->add('compltAdresseUser', TextareaType::class, ['label' => 'Complément d\'adresse'])
+            ->add('numTelUser', TelType::class, ['label' => 'Numéro de téléphone'])
         ;
     }
 

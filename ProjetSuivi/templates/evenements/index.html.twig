@@ -19,8 +19,8 @@
                 <td>{{ evenement.heureEvenement ? evenement.heureEvenement|date('H:i:s') : '' }}</td>
                 <td>{{ evenement.dateEvenement ? evenement.dateEvenement|date('Y-m-d') : '' }}</td>
                 <td>
-                    <a class="button" href="{{ path('app_evenements_Voir', {'id': evenement.id}) }}">Voir</a>
-                    <a class="button" href="{{ path('app_evenements_Editer', {'id': evenement.id}) }}">Editer</a>
+                    <a class="button" href="{{ path('app_evenements_show', {'id': evenement.id}) }}">Voir</a>
+                    <a class="button" href="{{ path('app_evenements_edit', {'id': evenement.id}) }}">Editer</a>
                 </td>
             </tr>
         {% else %}

@@ -17,8 +17,8 @@
             <tr>
                 <td>{{ document.libelleDocument }}</td>
                 <td>
-                    <a class="button" href="{{ path('app_documents_Voir', {'id': document.id}) }}">Voir</a>
-                    <a class="button" href="{{ path('app_documents_Editer', {'id': document.id}) }}">Editer</a>
+                    <a class="button" href="{{ path('app_documents_show', {'id': document.id}) }}">Voir</a>
+                    <a class="button" href="{{ path('app_documents_edit', {'id': document.id}) }}">Editer</a>
                 </td>
             </tr>
         {% else %}

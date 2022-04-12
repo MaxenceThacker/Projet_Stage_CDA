@@ -31,8 +31,8 @@
                 <td>{{ formation.romeFormation }}</td>
                 <td>{{ formation.dateFinValdteAggrmtFormation ? formation.dateFinValdteAggrmtFormation|date('Y-m-d') : '' }}</td>
                 <td>
-                    <a class="buttonSansOmbre" href="{{ path('app_formations_Voir', {'id': formation.id}) }}">Voir</a>
-                    <a class="buttonSansOmbre" href="{{ path('app_formations_Editer', {'id': formation.id}) }}">Editer</a>
+                    <a class="buttonSansOmbre" href="{{ path('app_formations_show', {'id': formation.id}) }}">Voir</a>
+                    <a class="buttonSansOmbre" href="{{ path('app_formations_edit', {'id': formation.id}) }}">Editer</a>
                 </td>
             </tr>
         {% else %}

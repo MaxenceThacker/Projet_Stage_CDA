@@ -15,14 +15,8 @@
         {{ form_row(registrationForm.plainPassword, {
             label: 'Password'
         }) }}
-        {{ form_row(user.nomUser) }}
-        {{ form_row(user.prenomUser) }}
-        {{ form_row(user.roles) }}
-        {{ form_row(user.adresseUser) }}
-        {{ form_row(user.compltAdresseUser) }}
-        {{ form_row(user.numTelUser) }}
         {{ form_row(registrationForm.agreeTerms) }}
-
         <button type="submit" class="button">Inscrire</button>
     {{ form_end(registrationForm) }}
+    
 {% endblock %}

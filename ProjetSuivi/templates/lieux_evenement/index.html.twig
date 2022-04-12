@@ -17,8 +17,8 @@
             <tr>
                 <td>{{ lieux_evenement.libelleLieuEvenement }}</td>
                 <td>
-                    <a class="button" href="{{ path('app_lieux_evenement_Voir', {'id': lieux_evenement.id}) }}">Voir</a>
-                    <a class="button" href="{{ path('app_lieux_evenement_Editer', {'id': lieux_evenement.id}) }}">Editer</a>
+                    <a class="button" href="{{ path('app_lieux_evenement_show', {'id': lieux_evenement.id}) }}">Voir</a>
+                    <a class="button" href="{{ path('app_lieux_evenement_edit', {'id': lieux_evenement.id}) }}">Editer</a>
                 </td>
             </tr>
         {% else %}

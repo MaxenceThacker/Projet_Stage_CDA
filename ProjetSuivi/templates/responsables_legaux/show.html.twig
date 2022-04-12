@@ -16,7 +16,7 @@
 
     <a class="button" href="{{ path('app_responsables_legaux_index') }}">Retour à la liste</a>
 
-    <a class="button" href="{{ path('app_responsables_legaux_Editer', {'id': responsables_legaux.id}) }}">Editer</a>
+    <a class="button" href="{{ path('app_responsables_legaux_edit', {'id': responsables_legaux.id}) }}">Editer</a>
 
     {{ include('responsables_legaux/_delete_form.html.twig') }}
 {% endblock %}

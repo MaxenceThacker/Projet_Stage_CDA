@@ -21,8 +21,8 @@
                 <td>{{ centre.adresseCentre }}</td>
                 <td>{{ centre.compltAdresseCentre }}</td>
                 <td>
-                    <a class="button" href="{{ path('app_centres_Voir', {'id': centre.id}) }}">Voir</a>
-                    <a class="button" href="{{ path('app_centres_Editer', {'id': centre.id}) }}">Editer</a>
+                    <a class="button" href="{{ path('app_centres_show', {'id': centre.id}) }}">Voir</a>
+                    <a class="button" href="{{ path('app_centres_edit', {'id': centre.id}) }}">Editer</a>
                 </td>
             </tr>
         {% else %}

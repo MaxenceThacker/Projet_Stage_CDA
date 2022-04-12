@@ -19,8 +19,8 @@
                 <td>{{ absence.dateAbsence ? absence.dateAbsence|date('Y-m-d') : '' }}</td>
                 <td>{{ absence.nbrHeureAbsence }}</td>
                 <td>
-                    <a class="button" href="{{ path('app_absences_Voir', {'id': absence.id}) }}">Voir</a>
-                    <a class="button" href="{{ path('app_absences_Editer', {'id': absence.id}) }}">Editer</a>
+                    <a class="button" href="{{ path('app_absences_show', {'id': absence.id}) }}">Voir</a>
+                    <a class="button" href="{{ path('app_absences_edit', {'id': absence.id}) }}">Editer</a>
                 </td>
             </tr>
         {% else %}

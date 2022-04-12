@@ -17,8 +17,8 @@
             <tr>
                 <td>{{ types_absence.libelleTypeAbsence }}</td>
                 <td>
-                    <a class="button" href="{{ path('app_types_absence_Voir', {'id': types_absence.id}) }}">Voir</a>
-                    <a class="button" href="{{ path('app_types_absence_Editer', {'id': types_absence.id}) }}">Editer</a>
+                    <a class="button" href="{{ path('app_types_absence_show', {'id': types_absence.id}) }}">Voir</a>
+                    <a class="button" href="{{ path('app_types_absence_edit', {'id': types_absence.id}) }}">Editer</a>
                 </td>
             </tr>
         {% else %}
