@@ -128,6 +128,7 @@ img {
 header {
     justify-content: space-around;
     width: 100%;
+    height: 10vh;
 }
 
 .header {
