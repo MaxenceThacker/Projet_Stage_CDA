@@ -3,9 +3,10 @@
 {% block title %}Nouvelle Absence{% endblock %}
 
 {% block body %}
+<div class="colonne">
     <h1>Créer une nouvelle Absences</h1>
 
     {{ include('absences/_form.html.twig') }}
-
     <a class="button" href="{{ path('app_absences_index') }}">Retour à la liste</a>
+</div>
 {% endblock %}
