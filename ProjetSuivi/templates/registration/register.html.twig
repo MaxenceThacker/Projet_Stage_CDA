@@ -3,6 +3,7 @@
 {% block title %}Inscription{% endblock %}
 
 {% block body %}
+
     {% for flash_error in app.flashes('verify_email_error') %}
         <div class="alert alert-danger" role="alert">{{ flash_error }}</div>
     {% endfor %}
@@ -15,8 +16,6 @@
         {{ form_row(registrationForm.plainPassword, {
             label: 'Password'
         }) }}
-        {{ form_row(registrationForm.agreeTerms) }}
-        <button type="submit" class="button">Inscrire</button>
+    <button type="submit" class="button">Inscrire</button>
     {{ form_end(registrationForm) }}
-    
 {% endblock %}
