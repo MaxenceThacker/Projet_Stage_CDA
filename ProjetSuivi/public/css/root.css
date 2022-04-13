@@ -21,7 +21,11 @@ header {
     background-color: var(--gray);
 }
 
-div, header {
+body {
+    height: 100vh;
+}
+
+body, nav, div, header {
     display: flex;
     flex: 1;
 }
@@ -60,7 +64,7 @@ img {
 }
 
 .espaceMini {
-    height: 0.5vh;
+    height: 0.25vh;
 }
 
 .flexMini {
@@ -109,23 +113,26 @@ img {
     cursor: pointer;
     width: 75%;
     font-weight: bold;
+    justify-content: center;
 }
 
 .buttonSansOmbre {
     background-color: var(--blue);
     color: white;
     padding: 0.5em;
+    margin: 1em;
     border: 2px solid var(--white);
     border-radius: 20px;
     cursor: pointer;
     width: 75%;
+    font-size: 0.75vw;
     font-weight: bold;
 }
 /* ****** header ****** */
 header {
     justify-content: space-around;
     width: 100%;
-    padding: 1vh;
+    padding: 0.75vh;
 }
 
 .header {
@@ -141,15 +148,16 @@ header {
 footer {
     flex-shrink: 0;
     text-align: center;
-    height: 20vh;
+    height: 15vh;
     width: 100%;
 }
 
 
 /* ****** contenue ****** */
 #conteneur {
-    background-color: var(--gray);
-    min-height: 100vh;
+    background-color: var(--white);
+    display: flex;
+    flex: 1 0 auto;
     /** mettre padding à voir **/
 }
 

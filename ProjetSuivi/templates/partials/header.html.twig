@@ -1,25 +1,25 @@
 <header>
-	<div class="center">
-		<h1>Nom Appli</h1>
-	</div>
-    <div class="espaceMoyen"></div>
-	<div class="colonne header">
-		<div class="flexMini">
-			<div class="espaceMini"></div>
-			<img class="imgHeader" src="{{ asset('img/logo_afpa.png') }}" alt="Logo de l'Afpa Entreprise">
+		<div class="center">
+			<h1>Nom Appli</h1>
 		</div>
-        <div class="espaceMini"></div>
-		<div>
+		<div class="espaceMoyen"></div>
+		<div class="header">
+			<div class="flexMini">
+				<div class="espaceMini"></div>
+				<img class="imgHeader" src="{{ asset('img/logo_afpa.png') }}" alt="Logo de l'Afpa Entreprise">
+			</div>
 			<div class="espaceMini"></div>
-			Connecté en tant que :
-		</div>
-        <div class="espaceMini"></div>
-		<div>
+			<div>
+				<div class="espaceMini"></div>
+				Connecté en tant que :
+			</div>
 			<div class="espaceMini"></div>
-			<button class="flexDemi button">
-				<a href="{{ path('app_logout') }}">Deconnexion</a>
-			</button>
+			<div>
+				<div class="espaceMini"></div>
+				<button class="flexDemi button">
+					<a href="{{ path('app_logout') }}">Deconnexion</a>
+				</button>
+			</div>
+			<div class="espacePetit"></div>
 		</div>
-        <div class="espacePetit"></div>
-	</div>
 </header>
