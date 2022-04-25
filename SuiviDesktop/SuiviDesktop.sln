@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuiviDesktop", "SuiviDesktop\SuiviDesktop.csproj", "{077C5A40-53C3-4180-9633-BE7E5FD014EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{077C5A40-53C3-4180-9633-BE7E5FD014EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{077C5A40-53C3-4180-9633-BE7E5FD014EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{077C5A40-53C3-4180-9633-BE7E5FD014EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{077C5A40-53C3-4180-9633-BE7E5FD014EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9AA0319D-C29D-48B9-B598-CEFE3F33B800}
+	EndGlobalSection
+EndGlobal
