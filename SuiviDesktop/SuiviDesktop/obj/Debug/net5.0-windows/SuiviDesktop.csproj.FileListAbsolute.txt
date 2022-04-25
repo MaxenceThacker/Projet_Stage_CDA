@@ -47,3 +47,4 @@ C:\Users\59011-07-11\Documents\Maxence CDA\Projet_Stage_CDA\SuiviDesktop\SuiviDe
 C:\Users\59011-07-11\Documents\Maxence CDA\Projet_Stage_CDA\SuiviDesktop\SuiviDesktop\bin\Debug\net5.0-windows\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\59011-07-11\Documents\Maxence CDA\Projet_Stage_CDA\SuiviDesktop\SuiviDesktop\bin\Debug\net5.0-windows\System.Diagnostics.DiagnosticSource.dll
 C:\Users\59011-07-11\Documents\Maxence CDA\Projet_Stage_CDA\SuiviDesktop\SuiviDesktop\obj\Debug\net5.0-windows\SuiviDesktop.csproj.CopyComplete
+C:\Users\59011-07-11\Documents\Maxence CDA\Projet_Stage_CDA\SuiviDesktop\SuiviDesktop\obj\Debug\net5.0-windows\Formulaires\AbsenceForm.g.cs

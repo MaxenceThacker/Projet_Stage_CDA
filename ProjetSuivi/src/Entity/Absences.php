@@ -19,6 +19,9 @@ class Absences
     #[ORM\Column(type: 'integer')]
     private $nbrHeureAbsence;
 
+    #[ORM\Column(type: 'string', length: 255)]
+    private $justification;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -44,6 +47,18 @@ class Absences
     public function setNbrHeureAbsence(int $nbrHeureAbsence): self
     {
         $this->nbrHeureAbsence = $nbrHeureAbsence;
+
+        return $this;
+    }
+
+    public function getJustification(): ?string
+    {
+        return $this->justification;
+    }
+
+    public function setJustification(string $justification): self
+    {
+        $this->justification = $justification;
 
         return $this;
     }

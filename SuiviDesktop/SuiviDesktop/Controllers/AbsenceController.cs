@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using SuiviDesktop.Data;
 using SuiviDesktop.Data.Dtos;
 using SuiviDesktop.Data.Models;
+using SuiviDesktop.Data.Profiles;
 using SuiviDesktop.Data.Services;
 using System;
 using System.Collections.Generic;
