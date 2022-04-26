@@ -1,0 +1,15 @@
+C:\Users\59011-07-11\Documents\Maxence CDA\Projet_Stage_CDA\ProjetSuiviDesktop\Installer\bin\Debug\Installer.dll
+C:\Users\59011-07-11\Documents\Maxence CDA\Projet_Stage_CDA\ProjetSuiviDesktop\Installer\bin\Debug\Installer.pdb
+C:\Users\59011-07-11\Documents\Maxence CDA\Projet_Stage_CDA\ProjetSuiviDesktop\Installer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\59011-07-11\Documents\Maxence CDA\Projet_Stage_CDA\ProjetSuiviDesktop\Installer\bin\Debug\System.Diagnostics.EventLog.dll
+C:\Users\59011-07-11\Documents\Maxence CDA\Projet_Stage_CDA\ProjetSuiviDesktop\Installer\bin\Debug\System.Diagnostics.PerformanceCounter.dll
+C:\Users\59011-07-11\Documents\Maxence CDA\Projet_Stage_CDA\ProjetSuiviDesktop\Installer\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\59011-07-11\Documents\Maxence CDA\Projet_Stage_CDA\ProjetSuiviDesktop\Installer\bin\Debug\Newtonsoft.Json.xml
+C:\Users\59011-07-11\Documents\Maxence CDA\Projet_Stage_CDA\ProjetSuiviDesktop\Installer\bin\Debug\System.Diagnostics.EventLog.xml
+C:\Users\59011-07-11\Documents\Maxence CDA\Projet_Stage_CDA\ProjetSuiviDesktop\Installer\bin\Debug\System.Diagnostics.PerformanceCounter.xml
+C:\Users\59011-07-11\Documents\Maxence CDA\Projet_Stage_CDA\ProjetSuiviDesktop\Installer\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\59011-07-11\Documents\Maxence CDA\Projet_Stage_CDA\ProjetSuiviDesktop\Installer\obj\Debug\Installer.csproj.AssemblyReference.cache
+C:\Users\59011-07-11\Documents\Maxence CDA\Projet_Stage_CDA\ProjetSuiviDesktop\Installer\obj\Debug\Installer.csproj.CoreCompileInputs.cache
+C:\Users\59011-07-11\Documents\Maxence CDA\Projet_Stage_CDA\ProjetSuiviDesktop\Installer\obj\Debug\Installer.csproj.CopyComplete
+C:\Users\59011-07-11\Documents\Maxence CDA\Projet_Stage_CDA\ProjetSuiviDesktop\Installer\obj\Debug\Installer.dll
+C:\Users\59011-07-11\Documents\Maxence CDA\Projet_Stage_CDA\ProjetSuiviDesktop\Installer\obj\Debug\Installer.pdb

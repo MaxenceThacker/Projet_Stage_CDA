@@ -40,13 +40,13 @@ namespace ProjetSuiviDesktop.Formulaires
             InitializeComponent();
             Init();
         }
-        public DocumentForm(Documents FenetreMere, MyDbContext _ctx, string mode, DocumentDTOOut A)
+        public DocumentForm(Documents FenetreMere, MyDbContext _ctx, string mode, DocumentDTOOut D)
         {
 
             _context = _ctx;
             _FenetreMere = FenetreMere;
             _Mode = mode;
-            _Document = A;
+            _Document = D;
             InitializeComponent();
             Init();
         }
@@ -63,15 +63,15 @@ namespace ProjetSuiviDesktop.Formulaires
         private void Go(object sender, RoutedEventArgs e)
         {
             string LibelleDocument = this.LibelleDocument.Text;
-            DocumentDTOIn A = new DocumentDTOIn();
-            A.LibelleDocument = LibelleDocument;
+            DocumentDTOIn D = new DocumentDTOIn();
+            D.LibelleDocument = LibelleDocument;
             if (_Mode == "Ajouter")
             {
-                _DocumentController.CreateDocument(A);
+                _DocumentController.CreateDocument(D);
             }
             else if (_Mode == "Modifier")
             {
-                _DocumentController.UpdateDocument(_Document.Id, A);
+                _DocumentController.UpdateDocument(_Document.Id, D);
             }
 
 
@@ -94,6 +94,26 @@ namespace ProjetSuiviDesktop.Formulaires
             }
             this._FenetreMere.Visibility = Visibility.Visible;
             this.Close();
+        }
+
+        private void BrowseButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Créer OpenFileDialog
+            Microsoft.Win32.OpenFileDialog openFileDlg = new Microsoft.Win32.OpenFileDialog();
+
+            // Lance OpenFileDialog en appellant ShowDialog.
+            Nullable<bool> result = openFileDlg.ShowDialog();
+            // Obtiens le nom du fichier selectionné.
+            // charge le contenue du fichier dans une TextBlock
+            if (result == true)
+            {
+                openFileDlg.InitialDirectory = @"DOSSIER PDF";
+                openFileDlg.Multiselect = true;
+                openFileDlg.DefaultExt = ".txt";
+                openFileDlg.Filter = "Documents textes (.txt)|*.txt";
+                FileNameTextBox.Text = openFileDlg.FileName;
+                TextBlock1.Text = System.IO.File.ReadAllText(openFileDlg.FileName);
+            }
         }
     }
 }
